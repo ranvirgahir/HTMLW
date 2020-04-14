@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<Head>
+
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script></head>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form name="myForm" action="/action_page.php" method="post" >
+  number 1:<br>
+  <input type="text" name="number">
+  <br>
+  number 2:<br>
+  <input type="text" name="number1">
+  <br><br>
+<button onclick="myFunction()">Add</button>
+<button onclick="myFunctio()">Subtact</button>
+<button onclick="myFuncti()">Divide</button>
+
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
